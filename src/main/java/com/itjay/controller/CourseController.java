@@ -48,6 +48,7 @@ public class CourseController {
         return Result.success(courseService.update(course));
     }
 
+
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable("id") String courseId) {
         return Result.success(courseService.delete(courseId));
